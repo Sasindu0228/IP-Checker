@@ -171,7 +171,6 @@ def banner():
     if ch == 1:
         main()
     elif ch == 2:
-        main()
         main_ip_online()
     elif ch == 3:
         pass
