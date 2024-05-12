@@ -1,5 +1,6 @@
 
 import os
+
 def main():
     def Number_Check(str):
         i = 0
@@ -167,7 +168,7 @@ def banner():
     print("")
     ch = int(input("\033[1;31m[*] \033[1;33mEnter Your Choice : >>> "))
     print("")
-
+    
     if ch == 1:
         main()
     elif ch == 2:
