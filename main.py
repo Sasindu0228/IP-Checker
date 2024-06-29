@@ -1,5 +1,6 @@
 
 import os
+import time
 
 def main():
     def Number_Check(str):
@@ -70,9 +71,9 @@ def main():
     address = input("Enter IP Number: ")
     print("Entered IP Address : " + address + "\n")
     if Check_IP(address):
-        print("\n\n✔ Valid IP Address.")
+        print(f"\n\n✔ {address} is Valid IP Address.")
     else:
-        print("\n\n❌ Invalid IP Address.")
+        print(f"\n\n❌ {address} is Invalid IP Address.")
     return address
 
 def main_ip_online():
@@ -144,20 +145,26 @@ def main_ip_online():
     address = input("Enter IP Number: ")
     print("Entered IP Address : " + address + "\n")
     if Check_IP(address):
-        print("\n\n✔ Valid IP Address.")
+        print(f"\n\n✔ {address} is Valid IP Address.")
     else:
-        print("\n\n❌ Invalid IP Address.")
+        print(f"\n\n❌ 1{address} Invalid IP Address.")
 
     os.system("ping -c 10"+" "+address)
     
 def banner():
     print("")
     print("\033[1;34m██╗██████╗       \033[1;33m █████╗ ██╗  ██╗███████╗ █████╗ ██╗  ██╗███████╗██████╗ ")
+    time.sleep(0.5)
     print("\033[1;34m██║██╔══██╗      \033[1;33m██╔══██╗██║  ██║██╔════╝██╔══██╗██║ ██╔╝██╔════╝██╔══██╗")
+    time.sleep(0.5)
     print("\033[1;34m██║██████╔╝█████╗\033[1;33m██║  ╚═╝███████║█████╗  ██║  ╚═╝█████═╝ █████╗  ██████╔╝")
+    time.sleep(0.5)
     print("\033[1;34m██║██╔═══╝ ╚════╝\033[1;33m██║  ██╗██╔══██║██╔══╝  ██║  ██╗██╔═██╗ ██╔══╝  ██╔══██╗")
+    time.sleep(0.5)
     print("\033[1;34m██║██║           \033[1;33m╚█████╔╝██║  ██║███████╗╚█████╔╝██║ ╚██╗███████╗██║  ██║")
+    time.sleep(0.5)
     print("\033[1;34m╚═╝╚═╝           \033[1;33m ╚════╝ ╚═╝  ╚═╝╚══════╝ ╚════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝")
+    time.sleep(0.5)
     print("\033[1;34m                                          Tool By - Sasindu Rashmika    ")
     print("")
     bar = "\n__________________________________________________________________________________\n"
